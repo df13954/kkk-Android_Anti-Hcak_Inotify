@@ -4,7 +4,7 @@
 
 #include <android/log.h>
 
-#define TAG "NDK" // 这个是自定义的LOG的标识
+#define TAG "Inotify_jni" // 这个是自定义的LOG的标识
 #ifdef NDEBUG
 
 #define LOGD(...)

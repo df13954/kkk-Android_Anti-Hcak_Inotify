@@ -60,9 +60,9 @@ void* thread_watchInotifyDump(void* arg)
 
     char dirName[NAME_MAX] = {0};
     //用于监控/proc/pid/maps的数据
-//    snprintf(dirName, NAME_MAX, "/proc/%d/maps", getpid());
-//    snprintf(dirName, NAME_MAX, "/proc/%d", getpid());
-    snprintf(dirName, NAME_MAX, "/proc");
+   // snprintf(dirName, NAME_MAX, "/proc/%d/maps", getpid());
+   snprintf(dirName, NAME_MAX, "/proc/%d", getpid());
+//     snprintf(dirName, NAME_MAX, "/proc");
 //    snprintf(dirName, NAME_MAX, "/proc/23494");
 
     LOGD("监控位置 : %s\n", dirName);
